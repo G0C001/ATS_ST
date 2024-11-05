@@ -13,7 +13,6 @@ from body import styleresume, personal, summary, education, experience_certfy, s
 #             print(f"Failed to load {dll_path}: {e}")
 
 from weasyprint import HTML
-from body import gemini
 
 st.title('ATS_RESUME')
 role = st.text_input('Enter your role:')
