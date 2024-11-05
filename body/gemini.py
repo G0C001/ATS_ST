@@ -19,5 +19,5 @@ def gemini(data):
 
     for match in cleaned_matches:
         add += match
-
-    return (f"{{ {add} }}")
+    print(f"{{ {add} }}")
+    return f"{{ {add} }}"

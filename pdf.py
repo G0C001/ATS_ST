@@ -17,11 +17,11 @@ from body import gemini
 
 st.title('ATS_RESUME')
 role = st.text_input('Enter your role:')
-job_input = st.text_area('Enter your job descripition:', height=200)
+skill = st.text_area('Enter your skills json:', height=200)
 
 if st.button('Submit'):
     try:
-        skills_dict = json.loads(gemini(job_input))
+        skills_dict = json.loads(skill)
         html_content = f"""
         {styleresume.style()}
         <body>
